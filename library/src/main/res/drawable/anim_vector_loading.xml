@@ -1,0 +1,23 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="124dp"
+    android:height="124dp"
+    android:drawable="@drawable/svg_loading"
+    android:viewportWidth="256"
+    android:viewportHeight="256"
+    tools:targetApi="lollipop">
+
+    <target
+        android:name="rotationGroup"
+        android:animation="@animator/rotation"/>
+
+    <target
+        android:name="@string/ek_circle_pink"
+        android:animation="@animator/strength"/>
+
+    <target
+        android:name="@string/ek_circle_orange"
+        android:animation="@animator/strength"/>
+
+</animated-vector>

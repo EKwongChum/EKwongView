@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="ek_circle_pink" translatable="false">pink</string>
+    <string name="ek_circle_orange" translatable="false">orange</string>
+</resources>
