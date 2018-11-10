@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EkLoadMoreView">
+        <attr name="point_color" format="color" />
+        <attr name="point_radius" format="dimension"/>
+        <attr name="spiral_radius" format="dimension"/>
+        <attr name="rotation_duration" format="integer"/>
+        <attr name="regression_duration" format="integer"/>
+        <attr name="point_scale" format="float"/>
+    </declare-styleable>
+</resources>

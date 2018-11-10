@@ -2,12 +2,9 @@ package com.ekwong.library.loading;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.Nullable;
-import android.util.AttributeSet;
 import android.view.View;
-
-import com.ekwong.library.R;
 
 
 /**
@@ -19,18 +16,29 @@ public class PinkCircleView extends View {
 
     private Paint mPaint;
 
+    /**
+     * 圆点的半径
+     */
+    private float mPointRadius = 16;
+
     public PinkCircleView(Context context) {
-        this(context, null);
+        super(context);
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint.setColor(Color.RED);
+        setPaint(paint);
     }
 
-    public PinkCircleView(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
-        initBase(context);
+    public PinkCircleView(Context context, Paint paint) {
+        super(context);
+        setPaint(paint);
     }
 
-    private void initBase(Context context) {
-        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setColor(context.getResources().getColor(R.color.common_pink_color));
+    private void setPaint(Paint paint) {
+        mPaint = paint;
+    }
+
+    public void setPointRadius(float pointRadius) {
+        mPointRadius = pointRadius;
     }
 
     @Override
@@ -38,6 +46,6 @@ public class PinkCircleView extends View {
         super.onDraw(canvas);
         float centerX = getWidth() / 2;
         float centerY = getHeight() / 2;
-        canvas.drawCircle(centerX, centerY, 16, mPaint);
+        canvas.drawCircle(centerX, centerY, mPointRadius, mPaint);
     }
 }
