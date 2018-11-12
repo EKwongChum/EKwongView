@@ -8,4 +8,8 @@
         <attr name="regression_duration" format="integer"/>
         <attr name="point_scale" format="float"/>
     </declare-styleable>
+
+    <declare-styleable name="EkLoadingView">
+        <attr name="loading_src" format="reference"/>
+    </declare-styleable>
 </resources>

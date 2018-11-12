@@ -6,28 +6,6 @@
     android:viewportWidth="256"
     android:viewportHeight="256">
 
-    <!--白底-->
-    <path
-        android:fillAlpha=".9"
-        android:fillColor="#f3f3f3"
-        android:pathData="M 128 14 C 190.960461481 14 242 65.0395385193 242 128 C 242 190.960461481 190.960461481 242 128 242 C 65.0395385193 242 14 190.960461481 14 128 C 14 65.0395385193 65.0395385193 14 128 14 Z"
-        android:strokeWidth="1"
-        android:strokeAlpha=".9"/>
-
-    <!--字母N-->
-    <path
-        android:pathData="M66,162.5v-66l51,56v-65"
-        android:strokeWidth="6"
-        android:strokeColor="#666"
-        android:strokeMiterLimit="6"/>
-
-    <!--字母c-->
-    <path
-        android:pathData="M184,119.9c-5.6-7.4-13.2-11.1-22.9-11.1c-7.7,0-14.1,2.5-19.3,7.5c-5.1,5-7.7,11-7.7,18.1c0,4.6,1.2,9,3.5,13 c2.3,4.1,5.6,7.2,9.7,9.5c4.1,2.3,8.7,3.4,13.8,3.4c9.3,0,16.9-3.7,22.8-11.1"
-        android:strokeWidth="6"
-        android:strokeColor="#666"
-        android:strokeMiterLimit="6"/>
-
     <group
         android:name="rotationGroup"
         android:pivotX="128.0"
@@ -52,4 +30,5 @@
             android:strokeLineCap="round"/>
 
     </group>
+
 </vector>
