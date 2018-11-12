@@ -119,17 +119,19 @@ public class EkLoadMoreView extends FrameLayout {
     @Override
     protected void onVisibilityChanged(@NonNull View changedView, int visibility) {
         super.onVisibilityChanged(changedView, visibility);
-        if (visibility == VISIBLE) {
-            if (mAnimatorSet.isRunning()) {
-                mAnimatorSet.removeListener(mAnimatorListenerAdapter);
-                mAnimatorSet.end();
-            }
-            mAnimatorSet.addListener(mAnimatorListenerAdapter);
-            mAnimatorSet.start();
-        } else {
-            if (mAnimatorSet.isRunning()) {
-                mAnimatorSet.removeListener(mAnimatorListenerAdapter);
-                mAnimatorSet.end();
+        if (mAnimatorSet != null) {
+            if (visibility == VISIBLE) {
+                if (mAnimatorSet.isRunning()) {
+                    mAnimatorSet.removeListener(mAnimatorListenerAdapter);
+                    mAnimatorSet.end();
+                }
+                mAnimatorSet.addListener(mAnimatorListenerAdapter);
+                mAnimatorSet.start();
+            } else {
+                if (mAnimatorSet.isRunning()) {
+                    mAnimatorSet.removeListener(mAnimatorListenerAdapter);
+                    mAnimatorSet.end();
+                }
             }
         }
     }
