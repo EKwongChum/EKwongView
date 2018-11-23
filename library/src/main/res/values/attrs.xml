@@ -10,6 +10,6 @@
     </declare-styleable>
 
     <declare-styleable name="EkLoadingView">
-        <attr name="loading_src" format="reference"/>
+        <attr name="img_src" format="reference"/>
     </declare-styleable>
 </resources>

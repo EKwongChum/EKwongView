@@ -8,21 +8,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--img_src 中间的图片资源-->
     <com.ekwong.library.loading.EkLoadingView
         android:id="@+id/loading_view"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_centerInParent="true"
-        app:loading_src="@mipmap/ic_launcher_round"/>
+        app:img_src="@mipmap/ic_launcher_round"/>
 
+    <!--point_color  圆点颜色-->
+    <!--point_radius  圆点半径-->
+    <!--point_scale  圆点在螺线运动时的缩小比例-->
+    <!--regression_duration  圆点回归的时间-->
+    <!--rotation_duration 圆点进行螺线运动的时间-->
+    <!--spiral_radius  螺线路径半径-->
     <com.ekwong.library.loading.EkLoadMoreView
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:point_color="@color/common_pink_color"
+        app:point_radius="8dp"
         app:point_scale="0.5"
         app:regression_duration="100"
-        app:rotation_duration="400"/>
+        app:rotation_duration="400"
+        app:spiral_radius="10dp"/>
 
 </RelativeLayout>

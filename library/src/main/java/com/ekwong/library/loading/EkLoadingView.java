@@ -39,7 +39,7 @@ public class EkLoadingView extends FrameLayout {
         super(context, attrs, defStyle);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.EkLoadingView, defStyle, 0);
-        mCircleRes = a.getResourceId(R.styleable.EkLoadingView_loading_src, 0);
+        mCircleRes = a.getResourceId(R.styleable.EkLoadingView_img_src, 0);
         a.recycle();
 
         mImageView = new AppCompatImageView(context);
