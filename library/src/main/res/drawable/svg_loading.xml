@@ -13,16 +13,16 @@
 
         <!--粉色圆-->
         <path
-            android:name="@string/ek_circle_pink"
+            android:name="pink"
             android:pathData="M 248,128 A 120,120,0,0,1,188,231.923048454"
             android:strokeWidth="12"
             android:strokeAlpha="1"
-            android:strokeColor="@color/common_pink_color"
+            android:strokeColor="#F85184"
             android:strokeLineCap="round"/>
 
         <!--橙色圆-->
         <path
-            android:name="@string/ek_circle_orange"
+            android:name="orange"
             android:pathData="M8,128 A 120,120,0,0,1,68,24.0769515459"
             android:strokeWidth="12"
             android:strokeAlpha="1"

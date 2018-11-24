@@ -27,7 +27,7 @@
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        app:point_color="@color/common_pink_color"
+        app:point_color="#F85184"
         app:point_radius="8dp"
         app:point_scale="0.5"
         app:regression_duration="100"
