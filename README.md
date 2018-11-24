@@ -5,15 +5,28 @@
 ## 效果图 ##
 
 
-![load_more](E:\Android\github\EKwongView\images\load_more.gif)
+![load_more.gif](https://raw.githubusercontent.com/EKwongChum/EKwongView/master/images/load_more.gif)
+
+
 
 ## Gradle ##
 
-添加依赖：
+Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+Add the dependency
 
 ```groovy
 dependencies {
-        implementation 'com.github.ekwongchum:ekwongview:1.0.0'
+        implementation 'com.github.EKwongChum:EKwongView:1.0.0'
     }
 ```
 
