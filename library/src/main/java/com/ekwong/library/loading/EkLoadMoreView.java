@@ -112,8 +112,10 @@ public class EkLoadMoreView extends FrameLayout {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        mAnimatorSet.addListener(mAnimatorListenerAdapter);
-        mAnimatorSet.start();
+        if (mAnimatorSet != null) {
+            mAnimatorSet.addListener(mAnimatorListenerAdapter);
+            mAnimatorSet.start();
+        }
     }
 
     @Override
@@ -140,7 +142,9 @@ public class EkLoadMoreView extends FrameLayout {
         @Override
         public void onAnimationEnd(Animator animation) {
             super.onAnimationEnd(animation);
-            mAnimatorSet.start();
+            if (mAnimatorSet != null) {
+                mAnimatorSet.start();
+            }
         }
     };
 
