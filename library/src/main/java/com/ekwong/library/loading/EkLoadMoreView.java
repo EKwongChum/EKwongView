@@ -139,11 +139,22 @@ public class EkLoadMoreView extends FrameLayout {
     }
 
     private AnimatorListenerAdapter mAnimatorListenerAdapter = new AnimatorListenerAdapter() {
+        private boolean mCanceled;
+
+        @Override
+        public void onAnimationStart(Animator animation) {
+            mCanceled = false;
+        }
+
+        @Override
+        public void onAnimationCancel(Animator animation) {
+            mCanceled = true;
+        }
+
         @Override
         public void onAnimationEnd(Animator animation) {
-            super.onAnimationEnd(animation);
-            if (mAnimatorSet != null) {
-                mAnimatorSet.start();
+            if (!mCanceled) {
+                animation.start();
             }
         }
     };

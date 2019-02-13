@@ -26,7 +26,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-        implementation 'com.github.EKwongChum:EKwongView:1.0.2'
+        implementation 'com.github.EKwongChum:EKwongView:1.0.3'
     }
 ```
 
